@@ -1,0 +1,42 @@
+    .tab-headers {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .tab-header {
+        padding: 10px 20px;
+        border: none;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .tab-header.active {
+        background-color: black;
+        color: white;
+    }
+    
+    .tab-header:hover {
+        background-color: #ddd;
+    }
+    
+    .tab-content {
+        border: 1px solid #ccc;
+        padding: 20px;
+        height: 100px; /* Altura fija para la animación */
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .tab-content-inner {
+        position: absolute;
+        width: 100%;
+        transition: opacity 0.5s;
+        opacity: 0;
+    }
+    
+    .tab-content-inner.active {
+        opacity: 1;
+    }
+    
